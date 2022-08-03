@@ -24,3 +24,6 @@ You should see something like
 
 5. Finally create all the resources for future template
     terraform apply -auto-approve -input=false
+
+6. You can access your cluster:
+aws eks --region <set your region> update-kubeconfig --name <set cluster name>
